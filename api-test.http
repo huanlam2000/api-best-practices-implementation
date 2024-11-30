@@ -1,3 +1,5 @@
+
+### CREATE workout
 POST http://localhost:3000/api/v1/workouts/
 Content-Type: application/json
 
@@ -21,6 +23,20 @@ Content-Type: application/json
   ]
 }
 
-###
 
+### Get all workouts
 GET http://localhost:3000/api/v1/workouts/
+
+
+### GET with mode = amrap
+GET http://localhost:3000/api/v1/workouts?mode=amrap
+
+
+### GET with mode = for time
+GET http://localhost:3000/api/v1/workouts?mode=for%20time
+
+### GET with limit and pagination
+GET http://localhost:3000/api/v1/workouts?page=2
+
+### GET with sort
+GET http://localhost:3000/api/v1/workouts?sort=-createdAt
